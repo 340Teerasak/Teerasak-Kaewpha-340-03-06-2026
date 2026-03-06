@@ -1,0 +1,11 @@
+{
+  "student_id": "65xxxxxx",
+  "name": "ชื่อ นามสกุล",
+  "github_repo": "https://github.com/USERNAME/Name-Lastname-Id-06-04-2026",
+  "backend_base_url": "https://xxx.onrender.com",
+  "frontend_url": "https://xxx.netlify.app",
+  "api": {
+    "health": "https://xxx.onrender.com/api/health",
+    "tasks": "https://xxx.onrender.com/api/tasks"
+  }
+}

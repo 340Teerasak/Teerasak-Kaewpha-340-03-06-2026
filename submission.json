@@ -10,3 +10,10 @@
   },
   "note": "Backend deploy อยู่ระหว่าง build บน Render, Frontend deploy สำเร็จบน Netlify"
 }
+
+//ติดปัญหาหลัก 2 เรื่องครับ:
+
+//Prisma 7 บน Arch Linux — engine เป็น debian build ทำให้ crash บน Arch Linux ไม่สามารถรัน prisma db push ในเครื่องได้ แก้ไขโดยย้าย prisma generate/push ไปรันบน Render แทน
+//Render ตั้งค่า Language เป็น Docker อัตโนมัติ — เพราะโปรเจกต์มี Dockerfile อยู่ ทำให้ build failed ต้องเปลี่ยนเป็น Node manually และตั้ง Build/Start Command ใหม่ ขณะส่งงาน Backend กำลัง build อยู่บน Render ยังไม่เสร็จ
+
+//Frontend deploy สำเร็จบน Netlify แล้ว ที่ https://magenta-lily-9ac8fb.netlify.app
